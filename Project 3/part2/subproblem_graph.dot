@@ -1,0 +1,30 @@
+digraph SubproblemGraph {
+  graph [rankdir=TB, nodesep=0.8, ranksep=1.1];
+  node [shape=ellipse, style=filled, fillcolor=lightblue];
+  edge [fontsize=10];
+  15 [label="P(15)"];
+  11 [label="P(11)"];
+  10 [label="P(10)"];
+  7 [label="P(7)"];
+  6 [label="P(6)"];
+  5 [label="P(5)"];
+  3 [label="P(3)"];
+  2 [label="P(2)"];
+  1 [label="P(1)"];
+  0 [label="P(0)"];
+  15 -> 11 [label="w=4, p=7"];
+  15 -> 10 [label="w=5, p=6"];
+  15 -> 7 [label="w=8, p=9"];
+  11 -> 7 [label="w=4, p=7"];
+  11 -> 6 [label="w=5, p=6"];
+  11 -> 3 [label="w=8, p=9"];
+  7 -> 3 [label="w=4, p=7"];
+  7 -> 2 [label="w=5, p=6"];
+  6 -> 2 [label="w=4, p=7"];
+  6 -> 1 [label="w=5, p=6"];
+  10 -> 6 [label="w=4, p=7"];
+  10 -> 5 [label="w=5, p=6"];
+  10 -> 2 [label="w=8, p=9"];
+  5 -> 1 [label="w=4, p=7"];
+  5 -> 0 [label="w=5, p=6"];
+}
